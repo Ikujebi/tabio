@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.custom-list li::before {
+          content: "\2022"; /* Unicode bullet symbol */
+          margin-right: 5px;
+       color: blanchedalmond;
+        }
+
+        ul.arrow-list li::before {
+    content: "\2192"; /* Unicode for right arrow */
+    margin-right: 10px;
+    color: rgb(214, 99, 99);}
+    ul.arrow-list, ul.custom-list {
+    list-style-type: none; /* Remove the default bullets */
+    padding-left: 0;
+  }
+      </style>
+</head>
+<body>
+    <table style="border-collapse: collapse;" border="1" cellpadding="10">
+        <colgroup>
+            <col style="background-color: #f2f2f2;">
+            <col style="background-color: #d9d9d9;">
+            <col style="background-color: #f2f2f2;">
+            <col style="background-color: #d9d9d9;">
+            <col style="background-color: #f2f2f2;">
+            <col style="background-color: #d9d9d9;">
+        </colgroup>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            <td>8:00 - 9:00</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>History</td>
+            <td>Science</td>
+            <td>Physical Education</td>
+            <td>Optional Class</td>
+        </tr>
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>History</td>
+            <td>Art</td>
+            <td>Optional Class</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td>History</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Music</td>
+            <td>Optional Class</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12:00</td>
+            <td>English</td>
+            <td>History</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Computer Science</td>
+            <td>Optional Class</td>
+        </tr>
+        <tr>
+            <td>12:00 - 1:00</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+        </tr>
+        <tr>
+            <td>1:00 - 2:00</td>
+            <td>Physical Education</td>
+            <td>Art</td>
+            <td>Music</td>
+            <td>Computer Science</td>
+            <td>Math</td>
+            <td>Optional Class</td>
+        </tr>
+        <tr>
+            <td>2:00 - 3:00</td>
+            <td>Art</td>
+            <td>Music</td>
+            <td>Computer Science</td>
+            <td>Physical Education</td>
+            <td>English</td>
+            <td>Optional Class</td>
+        </tr>
+        
+    </table>
+
+    <ul>
+        <li style="list-style-type: none;">
+          <span style="margin-right: 5px;">&#9679;</span> <!-- Unicode bullet symbol -->
+          Item 1
+        </li>
+        <li style="list-style-type: none;">
+          <span style="margin-right: 5px;">&#9679;</span>
+          Item 2
+        </li></ul>
+        <ul class="custom-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+
+          <ul class="arrow-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+</body>
+</html>
